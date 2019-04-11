@@ -106,11 +106,12 @@ def is_word_in_text(word: str, text: str) -> bool:
         >>> False
 
     """
-    a = 0
-    for text in text.split():
-        if word == text:
-            a = 1
-    return a
+    # a = 0
+    # for text in text.split():
+    #     if word == text:
+    #         a = 1
+    # return a
+    return [text for text in text.split() if word == text]
 
 
 def some_loop_exercise() -> list:
