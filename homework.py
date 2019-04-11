@@ -171,9 +171,9 @@ def simple_sort(data: List[int]) -> List[list]:
     Returns:
 
     """
-    for x in range(len(list)):
-        for y in range(len(list)):
-            if list[x] < list[y]:
-                list[x], list[y] = list[y], list[x]
+    for x in range(len(data)):
+        for y in range(len(data)):
+            if data[x] < data[y]:
+                data[x], data[y] = data[y], data[x]
 
     return list
